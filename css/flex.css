@@ -1,0 +1,33 @@
+.boxed {
+  background-color: #6d4298;
+  color: #ffffff;
+  max-width: 300px;
+  padding: 3em;
+
+  font-weight: bold;
+  word-wrap: break-word;
+  border-radius: 2em;
+
+  text-align: center;
+
+  margin: 1em auto;
+}
+
+.setOfBox {
+  opacity: 0.9;
+}
+
+/*centering the elements of the screen*/
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-item {
+  max-width: 50%;
+}
+
+.flex-container > div {
+  flex-direction: column;
+}

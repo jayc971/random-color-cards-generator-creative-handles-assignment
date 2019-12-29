@@ -1,0 +1,87 @@
+.home {
+  /*    padding: 80px 0;
+        background: #f84e77;*/
+}
+
+.home .single {
+  max-width: 750px;
+
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.home .single h2 {
+  font-size: 22px;
+  color: white;
+
+  /*text-transform: uppercase;*/
+  margin-bottom: 15px;
+}
+.home .single .form-control {
+  min-height: 50px;
+  background: rgba(255, 255, 255);
+  border-color: transparent;
+  border-radius: 20px 0 0 20px;
+  min-width: 250px;
+
+  transition: 0.5s;
+
+  opacity: 0.6;
+}
+.home .single .form-control:focus {
+  box-shadow: none;
+  border-color: #007fe7;
+  min-width: 400px;
+  transition: 0.5s;
+
+  opacity: 1;
+}
+
+.home .single .input-group .input-group-btn .btn {
+  color: #fff;
+  position: relative;
+  min-height: 50px;
+  border-radius: 0 20px 20px 0;
+  background-image: linear-gradient(
+    to right,
+    hsl(211, 100%, 50%),
+    hsl(179, 100%, 30%)
+  );
+  z-index: 1;
+}
+
+.home .single .input-group .input-group-btn .btn::before {
+  position: absolute;
+  min-height: 50px;
+  border-radius: 0 20px 20px 0;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(192, 100%, 50%),
+    hsl(221, 100%, 30%)
+  );
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+.home .single .input-group .input-group-btn .btn:hover::before {
+  opacity: 1;
+}
+
+.home .single .input-group .input-group-btn .btn:focus {
+  color: #fff;
+  position: relative;
+  min-height: 50px;
+  border-radius: 0 20px 20px 0;
+  background-image: linear-gradient(
+    to right,
+    hsl(211, 100%, 50%),
+    hsl(179, 100%, 30%)
+  );
+  z-index: 1;
+}
